@@ -182,11 +182,3 @@ See [engine/BENCHMARK.md](engine/BENCHMARK.md) for methodology and the full tabl
   stores the API key in the OS keychain; browser routes through a user-supplied streaming relay.
   See [docs/ai-assist.md](docs/ai-assist.md).
 
-## Roadmap (optional)
-- Time Machine follow-ups: scheduled re-scans, live feed subscriptions (MISP/Sigma), file-hash
-  re-matching, and a shared team case store.
-- gzip-capture ingest; `packet_index` Parquet for packet-level drill-down.
-- AI: SNI-domain context in chat; multi-session conversation memory.
-- Self-hosted team server (shared cases, RBAC) — the "hybrid" other half.
-- Integrations: export findings to RuleForge AI (detection rules) and Sentinel (SOC incidents).
-
