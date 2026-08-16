@@ -1,8 +1,4 @@
 # PacketPilot
-
-<img width="1908" height="907" alt="PacketPilo" src="https://github.com/user-attachments/assets/08e55323-bd45-45dd-b295-196aa9605c52" />
-
-
 **Your PCAP autopilot — from capture to conclusion in one click.**
 
 PacketPilot analyzes an *entire* packet capture (pcap/pcapng) and lands the analyst on a
@@ -86,6 +82,8 @@ dialogs; the browser build reads bundled sample output.
 
 ### Engine (CLI) — `cd engine`
 ```sh
+cargo build --target x86_64-unknown-linux-gnu
+
 # Generate a deterministic synthetic capture (for trying it out)
 cargo run -p ppcap-cli --release -- gen sample.pcap --scenario mixed --packets 100000 --edge-cases
 
@@ -181,4 +179,3 @@ See [engine/BENCHMARK.md](engine/BENCHMARK.md) for methodology and the full tabl
   only the engine's computed summary ever leaves; localhost endpoints stay fully on-device. Desktop
   stores the API key in the OS keychain; browser routes through a user-supplied streaming relay.
   See [docs/ai-assist.md](docs/ai-assist.md).
-
